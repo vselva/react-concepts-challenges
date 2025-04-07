@@ -9,6 +9,8 @@ For any of the above react projects, please do the following steps:
 - Node.js installed
 - npm
 
+### Steps 
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/react-goals-tracker.git
