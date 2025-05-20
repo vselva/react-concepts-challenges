@@ -2,12 +2,13 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
+import Home from './pages/Home';
 import Jsx from './pages/Jsx';
 import Props from './pages/Props/Props';
 import Map from './pages/Map/Map';
 import UseState from './pages/UseState/UseState';
-import ControlledComponents from './pages/ControlledComponents/ControlledComponents';
 import UseEffect from './pages/UseEffect/UseEffect';
+import Components from './pages/Components/Components';
 
 function App() {
     return (
@@ -21,6 +22,9 @@ function App() {
                                     <nav className="navbar navbar-expand-lg navbar-light bg-light mb-2">
                                         <ul className="navbar-nav">
                                             <li className="nav-item">
+                                                <Link className="nav-link" to="/">Home</Link>
+                                            </li>
+                                            <li className="nav-item">
                                                 <Link className="nav-link" to="/Jsx">Jsx</Link>
                                             </li>
                                             <li className="nav-item">
@@ -33,7 +37,7 @@ function App() {
                                                 <Link className="nav-link" to="/UseState">useState</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link className="nav-link" to="/ControlledComponents">ControlledComponents</Link>
+                                                <Link className="nav-link" to="/Components">Components</Link>
                                             </li>
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/UseEffect">UseEffect</Link>
@@ -42,11 +46,12 @@ function App() {
                                     </nav>
 
                                     <Routes>
+                                        <Route path="/" element={<Home />} />
                                         <Route path="/Jsx" element={<Jsx />} />
                                         <Route path="/Props" element={ <Props /> } />
                                         <Route path="/Map" element={ <Map /> } />
                                         <Route path="/UseState" element={ <UseState /> } />
-                                        <Route path="/ControlledComponents" element={ <ControlledComponents /> } />
+                                        <Route path="/Components" element={ <Components /> } />
                                         <Route path="/UseEffect" element={ <UseEffect /> } />
                                     </Routes>
                                 </Router>

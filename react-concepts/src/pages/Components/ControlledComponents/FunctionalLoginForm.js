@@ -10,7 +10,7 @@ function FunctionalLoginForm() {
     }
     return(
         <>
-            <h4> Login Form with Controlled Components:</h4>
+            <h5> Login Form with Controlled Components:</h5>
             <form onSubmit={handleSubmit}>
                 <input 
                     type="email"
@@ -19,7 +19,7 @@ function FunctionalLoginForm() {
                     />
                 <button 
                     type="submit"
-                    class="btn btn-primary btn-sm"> 
+                    className="btn btn-primary btn-sm"> 
                         Submit 
                 </button>
             </form>

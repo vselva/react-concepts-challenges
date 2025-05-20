@@ -4,7 +4,7 @@ function ControlledComponents() {
 
     return(
         <>
-            <h2> ControlledComponents: </h2>
+            <h4>5. ControlledComponents: </h4>
             <br />
             <FunctionalLoginForm />
         </>
