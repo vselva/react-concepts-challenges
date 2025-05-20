@@ -1,8 +1,8 @@
 import ClassComponent from "./ClassComponent";
-import ControlledComponents from "./ControlledComponents/ControlledComponents";
 import FunctionalComponent from "./FunctionalComponent";
-import HigherOrderFunction from "./HigherOrderCompsonent";
 import PureComponentBase from "./PureComponent/Base";
+import HigherOrderFunction from "./HigherOrderCompsonent";
+import ControlledComponentsBase from "./ControlledComponents/Base";
 
 function Components() {
     return(
@@ -17,7 +17,7 @@ function Components() {
             <br />
             <HigherOrderFunction />
             <br /> 
-            <ControlledComponents />
+            <ControlledComponentsBase />
         </>
     );
 }

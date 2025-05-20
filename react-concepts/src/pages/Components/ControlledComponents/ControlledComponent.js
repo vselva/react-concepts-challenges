@@ -2,20 +2,20 @@ import { useState } from "react";
 
 function FunctionalLoginForm() {
 
-    const [ email, setEmail ] = useState('');
+    const [ name, setName ] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(email);
+        alert('Submitted Name ID: ' + name);
     }
     return(
         <>
             <h5> Login Form with Controlled Components:</h5>
             <form onSubmit={handleSubmit}>
                 <input 
-                    type="email"
-                    value={email}
-                    onChange={ (e) => setEmail(e.target.value) }
+                    type="text"
+                    value={name}
+                    onChange={ (e) => setName(e.target.value) }
                     />
                 <button 
                     type="submit"
