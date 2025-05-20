@@ -8,7 +8,6 @@ class PropsInCC extends React.Component {
     }
 
     render() {
-        console.log(this.props);
         return(
             <>
                 <h4> Class Component With Props </h4>

@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
 import Jsx from './pages/Jsx';
-import Props from './pages/Props';
+import Props from './pages/Props/Props';
+import Map from './pages/Map/Map';
 
 function App() {
     return (
@@ -20,15 +21,18 @@ function App() {
                                                 <Link className="nav-link" to="/Jsx">Jsx</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link className="nav-link" to="/Props">Props </Link>
+                                                <Link className="nav-link" to="/Props">Props</Link>
                                             </li>
-                                            
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/Map">Map</Link>
+                                            </li>
                                         </ul>
                                     </nav>
 
                                     <Routes>
                                         <Route path="/Jsx" element={<Jsx />} />
                                         <Route path="/Props" element={ <Props /> } />
+                                        <Route path="/Map" element={ <Map /> } />
                                     </Routes>
                                 </Router>
                             </div>
