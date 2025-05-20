@@ -6,11 +6,12 @@ function FunctionalLoginForm() {
 
     const handleSubmit = e => {
         e.preventDefault();
-        alert('Submitted Name ID: ' + name);
+        alert('Submitted Value: ' + name);
     }
     return(
         <>
-            <h5> Login Form with Controlled Components:</h5>
+            <h5> Form with Controlled Components:</h5>
+            <p> Form values are controlled by state </p>
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text"
