@@ -7,6 +7,7 @@ import Props from './pages/Props/Props';
 import Map from './pages/Map/Map';
 import UseState from './pages/UseState/UseState';
 import ControlledComponents from './pages/ControlledComponents/ControlledComponents';
+import UseEffect from './pages/UseEffect/UseEffect';
 
 function App() {
     return (
@@ -34,6 +35,9 @@ function App() {
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/ControlledComponents">ControlledComponents</Link>
                                             </li>
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/UseEffect">UseEffect</Link>
+                                            </li>
                                         </ul>
                                     </nav>
 
@@ -43,6 +47,7 @@ function App() {
                                         <Route path="/Map" element={ <Map /> } />
                                         <Route path="/UseState" element={ <UseState /> } />
                                         <Route path="/ControlledComponents" element={ <ControlledComponents /> } />
+                                        <Route path="/UseEffect" element={ <UseEffect /> } />
                                     </Routes>
                                 </Router>
                             </div>

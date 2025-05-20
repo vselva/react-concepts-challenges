@@ -1,4 +1,4 @@
-import LoginForm from "./LoginForm";
+import FunctionalLoginForm from "./FunctionalLoginForm";
 
 function ControlledComponents() {
 
@@ -6,7 +6,7 @@ function ControlledComponents() {
         <>
             <h2> ControlledComponents: </h2>
             <br />
-            <LoginForm />
+            <FunctionalLoginForm />
         </>
     );
 }
