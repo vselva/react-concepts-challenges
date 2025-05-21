@@ -9,6 +9,7 @@ import Map from './pages/Map/Map';
 import UseState from './pages/UseState/UseState';
 import UseEffect from './pages/UseEffect/UseEffect';
 import Components from './pages/Components/Components';
+import FormsBase from './pages/Forms/Base';
 
 function App() {
     return (
@@ -42,6 +43,9 @@ function App() {
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/UseEffect">UseEffect</Link>
                                             </li>
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/Forms">Forms</Link>
+                                            </li>
                                         </ul>
                                     </nav>
 
@@ -53,6 +57,7 @@ function App() {
                                         <Route path="/UseState" element={ <UseState /> } />
                                         <Route path="/Components" element={ <Components /> } />
                                         <Route path="/UseEffect" element={ <UseEffect /> } />
+                                        <Route path="/Forms" element={ <FormsBase /> } />
                                     </Routes>
                                 </Router>
                             </div>
