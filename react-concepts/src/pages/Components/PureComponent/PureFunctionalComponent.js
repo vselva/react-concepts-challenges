@@ -4,6 +4,7 @@ import React from 'react';
 const PureFunctional = React.memo(
     function PureFunctionalComponent({ counter }) {
         console.log('Rendering Pure Functional Component ....');
+
         return(
             <>
                 <h5>Pure Functional Component </h5>

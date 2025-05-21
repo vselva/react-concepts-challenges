@@ -13,7 +13,7 @@ function FormsBase() {
             <h2> Form Related React code:</h2>
 
             <br />
-            <TextInput lable={ 'name' } value={ inputValue } onChange={ handleChange } required={ true }/>
+            <TextInput lable={ 'Name' } value={ inputValue } onChange={ handleChange } required={ true }/>
             <p> Input Value (Parent): { inputValue } </p>
         </>
     );
