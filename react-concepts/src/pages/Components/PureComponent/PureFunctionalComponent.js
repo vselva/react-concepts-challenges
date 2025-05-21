@@ -1,7 +1,7 @@
 
-import React from 'react';
+import { memo } from 'react';
 
-const PureFunctional = React.memo(
+const PureFunctional = memo(
     function PureFunctionalComponent({ counter }) {
         console.log('Rendering Pure Functional Component ....');
 
