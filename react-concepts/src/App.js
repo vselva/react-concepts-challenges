@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Jsx from './pages/Jsx';
-import Props from './pages/Props/Props';
+import PropsBase from './pages/Props/Base';
 import Map from './pages/Map/Map';
 import UseEffect from './pages/Hooks/UseEffect/Base';
 import Components from './pages/Components/Components';
@@ -30,7 +30,7 @@ function App() {
                                                 <Link className="nav-link" to="/Jsx">Jsx</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link className="nav-link" to="/Props">Props</Link>
+                                                <Link className="nav-link" to="/PropsBase">Props</Link>
                                             </li>
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/Map">Map</Link>
@@ -53,7 +53,7 @@ function App() {
                                     <Routes>
                                         <Route path="/" element={<Home />} />
                                         <Route path="/Jsx" element={<Jsx />} />
-                                        <Route path="/Props" element={ <Props /> } />
+                                        <Route path="/PropsBase" element={ <PropsBase /> } />
                                         <Route path="/Map" element={ <Map /> } />
                                         <Route path="/Components" element={ <Components /> } />
                                         <Route path="/UseEffect" element={ <UseEffect /> } />

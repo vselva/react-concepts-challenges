@@ -33,7 +33,7 @@ function UseContext() {
         <>
             <h4>UseContext (Child) Component:</h4>
             <p>UseContext Component to receive value 'name' from Parent Component (UseContextBase):</p>
-            <p> Value passed: { user.name } </p>
+            <p> Value Received: { user.name } </p>
         </>
     );
 }
