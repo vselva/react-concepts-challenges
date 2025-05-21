@@ -10,8 +10,8 @@ function FunctionalLoginForm() {
     }
     return(
         <>
-            <h5> Form with Controlled Components:</h5>
-            <p> Form values are controlled by state </p>
+            <h5>Form with Controlled Components:</h5>
+            <p>Form values are controlled by state.</p>
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text"

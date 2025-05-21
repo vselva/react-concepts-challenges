@@ -1,4 +1,4 @@
-function HigherOrderFunction() {
+function HigherOrderComponent() {
     return(
         <>
             <h4>4. Higher Order Component</h4>
@@ -8,4 +8,4 @@ function HigherOrderFunction() {
     );
 }
 
-export default HigherOrderFunction;
+export default HigherOrderComponent;

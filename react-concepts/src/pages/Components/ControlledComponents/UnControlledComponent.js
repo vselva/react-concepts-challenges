@@ -13,7 +13,11 @@ function UnControlledComponent() {
             <h5> Form with Un Controlled Components:</h5>
             <p>Form values are not controlled by state. instead it is controlled by React.useRef. The value is retrived by inputRef.current.value. </p>
             <input type="text" ref={inputRef} />
-            <button onClick={handleSubmit} className='btn btn-secondary btn-sm'> Submit </button>
+            <button 
+                onClick={handleSubmit} 
+                className='btn btn-secondary btn-sm'> 
+                    Submit 
+            </button>
         </>
     );
 }
