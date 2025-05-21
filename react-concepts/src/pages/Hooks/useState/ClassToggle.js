@@ -17,7 +17,7 @@ class ClassToggle extends Component {
     render() {
         return (
             <>
-                <h4> Toggle with useState and ClassComponent:</h4>
+                <h5>Toggle with ClassComponent & this.state and this.setState:</h5>
                 <p> Toggle: { this.state.isOn ? 'ON' : 'OFF' } </p>
                 <button 
                     type="button"

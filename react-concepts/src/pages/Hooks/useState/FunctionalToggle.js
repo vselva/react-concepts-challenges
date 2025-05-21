@@ -5,7 +5,7 @@ function FunctionalToggle() {
 
     return (
         <>
-            <h4> Toggle with useState and Functional Compoment:</h4>
+            <h5> Toggle with Functional Compoment & useState Hook:</h5>
             <p> The State is now { isOn ? 'ON' : 'OFF' } </p>
             <button 
                 type="button" 

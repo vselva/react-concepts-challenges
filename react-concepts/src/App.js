@@ -6,10 +6,11 @@ import Home from './pages/Home';
 import Jsx from './pages/Jsx';
 import Props from './pages/Props/Props';
 import Map from './pages/Map/Map';
-import UseState from './pages/UseState/UseState';
-import UseEffect from './pages/UseEffect/UseEffect';
+import UseEffect from './pages/Hooks/UseEffect/Base';
 import Components from './pages/Components/Components';
 import FormsBase from './pages/Forms/Base';
+import HooksBase from './pages/Hooks/Base';
+import CoreFunctionsBase from './pages/CoreFunctions/Base';
 
 function App() {
     return (
@@ -35,16 +36,16 @@ function App() {
                                                 <Link className="nav-link" to="/Map">Map</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link className="nav-link" to="/UseState">useState</Link>
-                                            </li>
-                                            <li className="nav-item">
                                                 <Link className="nav-link" to="/Components">Components</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link className="nav-link" to="/UseEffect">UseEffect</Link>
+                                                <Link className="nav-link" to="/Forms">Forms</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link className="nav-link" to="/Forms">Forms</Link>
+                                                <Link className="nav-link" to="/Hooks">Hooks</Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/CoreFunctions">CoreFunctions</Link>
                                             </li>
                                         </ul>
                                     </nav>
@@ -54,10 +55,11 @@ function App() {
                                         <Route path="/Jsx" element={<Jsx />} />
                                         <Route path="/Props" element={ <Props /> } />
                                         <Route path="/Map" element={ <Map /> } />
-                                        <Route path="/UseState" element={ <UseState /> } />
                                         <Route path="/Components" element={ <Components /> } />
                                         <Route path="/UseEffect" element={ <UseEffect /> } />
                                         <Route path="/Forms" element={ <FormsBase /> } />
+                                        <Route path="/Hooks" element={ <HooksBase /> } />
+                                        <Route path="/CoreFunctions" element={ <CoreFunctionsBase /> } />
                                     </Routes>
                                 </Router>
                             </div>
