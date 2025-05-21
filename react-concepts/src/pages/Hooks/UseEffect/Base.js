@@ -1,3 +1,4 @@
+import AsyncAwaitFetch from "./AsyncAwaitFetch";
 import Fetch from "./Fetch";
 
 function UseEffectBase() {
@@ -7,6 +8,9 @@ function UseEffectBase() {
             <h4>useEffect:</h4>
             <hr /> 
             <Fetch />
+
+            <hr />
+            <AsyncAwaitFetch />
         </>
     );
 }
