@@ -8,10 +8,11 @@ function AsyncAwaitFetch() {
         // fetch('https://jsonplaceholder.typicode.com/users')
         // .then(res => res.json())
         // .then(data => setUsers(data));
+
         // Async Await Way
         const fetchUsers = async () => {
             const res = await fetch('https://jsonplaceholder.typicode.com/users');
-            const data = res.json();
+            const data = await res.json();
             setUsers(data);
         }
         fetchUsers();

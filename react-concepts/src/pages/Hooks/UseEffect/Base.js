@@ -1,5 +1,6 @@
 import AsyncAwaitFetch from "./AsyncAwaitFetch";
 import Fetch from "./Fetch";
+import TrackInputChange from "./TrackInputChange";
 
 function UseEffectBase() {
 
@@ -11,6 +12,9 @@ function UseEffectBase() {
 
             <hr />
             <AsyncAwaitFetch />
+
+            <br />
+            <TrackInputChange />
         </>
     );
 }
