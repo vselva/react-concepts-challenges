@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Jsx from './pages/Jsx';
 import PropsBase from './pages/Props/Base';
 import Map from './pages/Map/Map';
-import UseEffect from './pages/Hooks/UseEffect/Base';
+import UseEffect from './pages/Hooks/3-UseEffect/Base';
 import Components from './pages/Components/Components';
 import FormsBase from './pages/Forms/Base';
 import HooksBase from './pages/Hooks/Base';

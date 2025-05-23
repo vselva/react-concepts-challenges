@@ -1,5 +1,7 @@
-import UseEffectBase from "./UseEffect/Base";
-import UseStateBase from "./useState/Base";
+import UseEffectBase from "./3-UseEffect/Base";
+import UseReducerBase from "./2-useReducer/Base";
+import UseStateBase from "./1-useState/Base";
+import UseCallBackBase from "./4-useCallBack/Base";
 
 function HooksBase() {
 
@@ -9,8 +11,14 @@ function HooksBase() {
             <hr />
             <UseStateBase />
             <hr />
+            <UseReducerBase />
+            <hr />
+
             <UseEffectBase />
-            <hr /> 
+            <hr />
+            
+            <UseCallBackBase />
+            <hr />
         </>
     );
 }

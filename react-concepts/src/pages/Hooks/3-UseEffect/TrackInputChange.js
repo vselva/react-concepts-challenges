@@ -4,9 +4,26 @@ function TrackInputChange() {
 
     const [name, setName ] = useState('');
 
+    // Execute only once after component is mounted
     useEffect(() => {
-        console.log('inout value changed!', name);
+        console.log('ONLY ONE TIME!', name);
+
+        // the return function executes before component gets unmounted 
+        return () => {
+            console.log('CLEANUP!')
+        }
+    }, []);
+
+    // Executes when name state is changed
+    useEffect(() => {
+        console.log('CHANGED!', name);
     }, [name]);
+
+    // Executed for each render - Not recommeded 
+    useEffect(() => {
+        console.log('EACH TIME!', name);
+    });
+
 
     return (
         <div className="mb-3">
