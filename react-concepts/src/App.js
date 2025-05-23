@@ -11,6 +11,7 @@ import Components from './pages/Components/Components';
 import FormsBase from './pages/Forms/Base';
 import HooksBase from './pages/Hooks/Base';
 import CoreFunctionsBase from './pages/CoreFunctions/Base';
+import NotFound from './pages/NotFound';
 
 function App() {
     return (
@@ -60,6 +61,7 @@ function App() {
                                         <Route path="/Forms" element={ <FormsBase /> } />
                                         <Route path="/Hooks" element={ <HooksBase /> } />
                                         <Route path="/CoreFunctions" element={ <CoreFunctionsBase /> } />
+                                        <Route path="*" element={<NotFound /> } />
                                     </Routes>
                                 </Router>
                             </div>
