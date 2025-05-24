@@ -2,15 +2,18 @@ import UseEffectBase from "./3-UseEffect/Base";
 import UseReducerBase from "./2-useReducer/Base";
 import UseStateBase from "./1-useState/Base";
 import UseCallBackBase from "./4-useCallBack/Base";
+import UseMemoBase from "./5-useMemo.js/Base";
 
 function HooksBase() {
 
     return (
         <>
-            <h2> Hooks Base:</h2>
+            <h1> React Hooks:</h1>
             <hr />
+
             <UseStateBase />
             <hr />
+
             <UseReducerBase />
             <hr />
 
@@ -19,6 +22,9 @@ function HooksBase() {
             
             <UseCallBackBase />
             <hr />
+
+            <UseMemoBase />
+            <br />
         </>
     );
 }

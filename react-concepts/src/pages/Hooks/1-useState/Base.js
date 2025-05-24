@@ -5,7 +5,7 @@ function UseStateBase() {
 
     return (
         <>
-            <h4> useState: </h4>
+            <h2> useState: </h2>
             <hr />
             <ClassToggle />
             <hr /> 

@@ -9,7 +9,7 @@ function UseEffectBase() {
 
     return (
         <div className="container my-4">
-            <h4 className="mb-3">useEffect:</h4>
+            <h2 className="mb-3">useEffect:</h2>
             <hr />
 
             <div className="mb-4">
