@@ -5,6 +5,7 @@ import UseCallBackBase from "./5-useCallBack/Base";
 import UseMemoBase from "./6-useMemo.js/Base";
 import UseRefBase from "./7-useRef.js/Base";
 import UseLayoutEffectBase from "./4-useLayoutEffect.js/Base";
+import CustomHook from "./CustomHook/Base";
 
 function HooksBase() {
 
@@ -33,6 +34,8 @@ function HooksBase() {
 
             <UseLayoutEffectBase />
             <hr />
+
+            <CustomHook />
         </>
     );
 }
