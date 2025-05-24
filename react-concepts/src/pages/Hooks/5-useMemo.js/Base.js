@@ -5,6 +5,7 @@ const UseMemoBase = () => {
         <> 
             <h2>useMemo():</h2>
             <hr />
+            
             <DoubleValueMemoExample />
             <hr />
         </>
