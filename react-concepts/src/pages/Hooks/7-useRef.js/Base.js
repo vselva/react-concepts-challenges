@@ -8,7 +8,6 @@ function UseRefBase() {
             <hr />
 
             <Timer /> 
-            <hr />
         </>
     );
 }

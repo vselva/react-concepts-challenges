@@ -1,9 +1,10 @@
 import UseEffectBase from "./3-UseEffect/Base";
 import UseReducerBase from "./2-useReducer/Base";
 import UseStateBase from "./1-useState/Base";
-import UseCallBackBase from "./4-useCallBack/Base";
-import UseMemoBase from "./5-useMemo.js/Base";
-import UseRefBase from "./6-useRef.js/Base";
+import UseCallBackBase from "./5-useCallBack/Base";
+import UseMemoBase from "./6-useMemo.js/Base";
+import UseRefBase from "./7-useRef.js/Base";
+import UseLayoutEffectBase from "./4-useLayoutEffect.js/Base";
 
 function HooksBase() {
 
@@ -28,6 +29,9 @@ function HooksBase() {
             <br />
 
             <UseRefBase />
+            <hr />
+
+            <UseLayoutEffectBase />
             <hr />
         </>
     );
