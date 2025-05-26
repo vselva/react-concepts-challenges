@@ -16,7 +16,6 @@ class M4ComponentDidMount extends Component {
 
     render() {
         const { users, loading } = this.state;
-        console.log(users);
 
         if(loading) 
             return <div>Loading...</div>

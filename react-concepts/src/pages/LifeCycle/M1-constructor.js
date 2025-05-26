@@ -6,7 +6,7 @@ class M1Constructor extends Component {
     constructor(props) {
         // Call parent's constructor with Initial Values 
         super(props);
-        console.log(props);
+        console.log('props in constructor:', props);
 
         // Intializing props
         this.state = {

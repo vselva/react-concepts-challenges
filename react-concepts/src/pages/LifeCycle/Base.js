@@ -9,6 +9,7 @@ import U4GetSnapShotBeforeUpdate from "./U4-getSnapShotBeforeUpdate";
 import U5ComponentDidUpdate from "./U5-componentDidUpdate";
 import ComponentWillUnMount from "./UM-componentWillUnMount";
 import EH1GetDerivedStateFromErrors from "./EH1-getDerivedStatefromErrors";
+import EH2ComponentDidCatch from "./EH2-componentDidCatch";
 
 function LifeCycleBase() {
     return(
@@ -17,31 +18,24 @@ function LifeCycleBase() {
             <br/>
 
             <h2>1. Mounting Phase:</h2>
-            <M1Constructor counter={ 123 } />
-            <hr />
-            <M2GetDerivedStateFromProps />
-            <hr />
-            <M3Render />
-            <hr />
+            <M1Constructor counter={ 123 } /> <hr />
+            <M2GetDerivedStateFromProps /> <hr />
+            <M3Render /> <hr />
             <M4ComponentDidMount />
 
-
             <h2>2. Updating Phase:</h2>
-            <U1GetDerivedStateFromProps />
-            <hr />
-            <U2ShouldComponentUpdate />
-            <hr />
-            <U3Render />
-            <hr />
-            <U4GetSnapShotBeforeUpdate />
-            <hr />
+            <U1GetDerivedStateFromProps /> <hr />
+            <U2ShouldComponentUpdate /> <hr />
+            <U3Render /> <hr />
+            <U4GetSnapShotBeforeUpdate /> <hr />
             <U5ComponentDidUpdate />
 
             <h2>3. Unmounting Phase:</h2>
-            <ComponentWillUnMount />
+            <ComponentWillUnMount /> <hr />
 
             <h2>4. Error Handling Phase:</h2>
-            <EH1GetDerivedStateFromErrors />
+            <EH1GetDerivedStateFromErrors /> <hr />
+            <EH2ComponentDidCatch /> <hr />
 
         </>
     );
