@@ -12,6 +12,7 @@ import FormsBase from './pages/Forms/Base';
 import HooksBase from './pages/Hooks/Base';
 import CoreFunctionsBase from './pages/CoreFunctions/Base';
 import NotFound from './pages/NotFound';
+import LifeCycleBase from './pages/LifeCycle/Base';
 
 function App() {
     return (
@@ -46,7 +47,10 @@ function App() {
                                                 <Link className="nav-link" to="/Hooks">Hooks</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <Link className="nav-link" to="/CoreFunctions">CoreFunctions</Link>
+                                                <Link className="nav-link" to="/CoreFunctions">Core Functions</Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/LifeCycle">Component Life Cycles</Link>
                                             </li>
                                         </ul>
                                     </nav>
@@ -61,6 +65,7 @@ function App() {
                                         <Route path="/Forms" element={ <FormsBase /> } />
                                         <Route path="/Hooks" element={ <HooksBase /> } />
                                         <Route path="/CoreFunctions" element={ <CoreFunctionsBase /> } />
+                                        <Route path="/LifeCycle" element={ <LifeCycleBase /> } />
                                         <Route path="*" element={<NotFound /> } />
                                     </Routes>
                                 </Router>

@@ -8,7 +8,10 @@ const PureFunctional = memo(
         return(
             <>
                 <h5>Pure Functional Component </h5>
-                <p> This is a simple Pure Class Component. This will not render when counter 1 is changed. This renders only when counter 2 value is changed. Avoid unnecessary rendering.</p>
+                <p> This is a simple Pure Class Component. 
+                    This will not render when counter 1 is changed. 
+                    This renders only when counter 2 value is changed. 
+                    Avoids unnecessary rendering.</p>
                 <p> Props passed: {counter} </p>
             </>
         );
