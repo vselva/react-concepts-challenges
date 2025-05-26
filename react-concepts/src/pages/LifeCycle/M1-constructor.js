@@ -1,8 +1,8 @@
 import { Component } from "react"
 
-class MountingPhaseConstructor extends Component {
+class M1Constructor extends Component {
     constructor(props) {
-        // call parent class with props 
+        // Call parent's constructor with Initial Values 
         super(props);
         console.log(props);
 
@@ -24,7 +24,7 @@ class MountingPhaseConstructor extends Component {
     render() {
         return (
             <div className="card p-4 m-3">
-            <h4 className="mb-3">constructor:</h4>
+            <h4 className="mb-3">1. constructor:</h4>
             <p>
                 <span className="fw-bold">props:</span> {this.props.counter}
             </p>
@@ -39,4 +39,4 @@ class MountingPhaseConstructor extends Component {
     }
 }
 
-export default MountingPhaseConstructor;
+export default M1Constructor;

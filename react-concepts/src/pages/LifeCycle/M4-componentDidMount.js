@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class ComponentDidMount extends Component {
+class M4ComponentDidMount extends Component {
 
     state = {
         users: [],
@@ -22,14 +22,14 @@ class ComponentDidMount extends Component {
             return <div>Loading...</div>
 
         return (
-            <>
-                <h4>componentDidMount():</h4>
+            <div className="card p-4 m-3">
+                <h4>4. componentDidMount():</h4>
                 <ul>
                     { users.map(user => <li key={user.id}>{ user.name }</li>) }
                 </ul>
-            </>
+            </div>
         )
     }
 }
 
-export default ComponentDidMount;
+export default M4ComponentDidMount;
