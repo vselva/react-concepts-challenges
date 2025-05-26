@@ -1,6 +1,8 @@
 import { Component } from "react"
 
 class M1Constructor extends Component {
+
+    // traditional approach of initializing props and method binding in constructor 
     constructor(props) {
         // Call parent's constructor with Initial Values 
         super(props);
@@ -16,10 +18,25 @@ class M1Constructor extends Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick() {
+    // traditional appraoch 
+    handleClick () {
         console.log('Click event obaserved!');
         this.setState((prevState) => ({ ...prevState, count: prevState.count + 1 }))
     }
+
+    // modern approach to initialize state as a class parameter (out of constructor)
+    /* state = {
+        count: 100,
+        isLoading: true
+    }*/
+
+    // modern approach to use arrow function with out event binding in constructor
+    /* handleClick = () => {
+        console.log('Click event obaserved!');
+        this.setState((prevState) => ({ ...prevState, count: prevState.count + 1 }))
+    }*/
+
+    // Please note if we use modern approach constructor may not be required. 
 
     render() {
         return (
