@@ -32,7 +32,7 @@ function LifeCycleBase() {
                 </button>
                 <hr />
 
-            <M3Render /> <hr />
+            <M3Render name={'Selva'} /> <hr />
             <M4ComponentDidMount />
 
             <h2>2. Updating Phase:</h2>
