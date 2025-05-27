@@ -16,6 +16,7 @@ function LifeCycleBase() {
     const [ counter1, setCounter1 ] = useState(0);
     const [ counter2, setCounter2 ] = useState(0);
     const [ counter3, setCounter3 ] = useState([0]);
+    const [ counter4, setCounter4 ] = useState(0);
 
     return(
         <>
@@ -59,7 +60,15 @@ function LifeCycleBase() {
                 </button>
                 <hr />
 
-            <U3Render /> <hr />
+            <U3Render counter={ counter4 } /> <hr />
+                <button 
+                    type="submit" 
+                    className="btn btn-primary btn-sm"
+                    onClick={() => setCounter4(p => p + 1 ) }>
+                        Update counter prop (current: { counter4 }) for render() in Updating Phase
+                </button>
+                <hr />
+
             <U4GetSnapShotBeforeUpdate /> <hr />
             <U5ComponentDidUpdate />
 
