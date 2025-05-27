@@ -21,8 +21,9 @@ function LifeCycleBase() {
             <br/>
 
             <h2>1. Mounting Phase:</h2>
+
             <M1Constructor counter={ 123 } /> <hr />
-            
+
             <M2GetDerivedStateFromProps counter={ counter } /> <hr />
                 <button 
                     type="submit" 
@@ -33,10 +34,20 @@ function LifeCycleBase() {
                 <hr />
 
             <M3Render name={'Selva'} /> <hr />
+
             <M4ComponentDidMount />
 
             <h2>2. Updating Phase:</h2>
+
             <U1GetDerivedStateFromProps /> <hr />
+                <button 
+                    type="submit" 
+                    className="btn btn-primary btn-sm"
+                    onClick={() => setCounter(c => c + 1) }>
+                        Update counter prop (current: {counter}) for M2GetDerivedStateFromProps
+                </button>
+                <hr />
+                
             <U2ShouldComponentUpdate /> <hr />
             <U3Render /> <hr />
             <U4GetSnapShotBeforeUpdate /> <hr />
