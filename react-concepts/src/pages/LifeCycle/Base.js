@@ -13,7 +13,9 @@ import EH2ComponentDidCatch from "./EH2-componentDidCatch";
 import { useState } from "react";
 
 function LifeCycleBase() {
-    const [ counter, setCounter ] = useState(0);
+    const [ counter1, setCounter1 ] = useState(0);
+    const [ counter2, setCounter2 ] = useState(0);
+    const [ counter3, setCounter3 ] = useState([0]);
 
     return(
         <>
@@ -24,12 +26,12 @@ function LifeCycleBase() {
 
             <M1Constructor counter={ 123 } /> <hr />
 
-            <M2GetDerivedStateFromProps counter={ counter } /> <hr />
+            <M2GetDerivedStateFromProps counter={ counter1 } /> <hr />
                 <button 
                     type="submit" 
                     className="btn btn-primary btn-sm"
-                    onClick={() => setCounter(c => c + 1) }>
-                        Update counter prop (current: {counter}) for M2GetDerivedStateFromProps
+                    onClick={() => setCounter1(c => c + 1) }>
+                        Update counter prop (current: {counter1}) for M2GetDerivedStateFromProps
                 </button>
                 <hr />
 
@@ -39,16 +41,24 @@ function LifeCycleBase() {
 
             <h2>2. Updating Phase:</h2>
 
-            <U1GetDerivedStateFromProps /> <hr />
+            <U1GetDerivedStateFromProps counter={ counter2 } /> <hr />
                 <button 
                     type="submit" 
                     className="btn btn-primary btn-sm"
-                    onClick={() => setCounter(c => c + 1) }>
-                        Update counter prop (current: {counter}) for M2GetDerivedStateFromProps
+                    onClick={() => setCounter2(c => c + 1) }>
+                        Update counter prop (current: { counter2 }) for U1GetDerivedStateFromProps
                 </button>
                 <hr />
-                
-            <U2ShouldComponentUpdate /> <hr />
+
+            <U2ShouldComponentUpdate counter={ counter3 } /> <hr />
+                <button 
+                    type="submit" 
+                    className="btn btn-primary btn-sm"
+                    onClick={() => setCounter3(p => [ p[0] + 1 ]) }>
+                        Update counter prop (current: { counter3 }) for U2ShouldComponentUpdate
+                </button>
+                <hr />
+
             <U3Render /> <hr />
             <U4GetSnapShotBeforeUpdate /> <hr />
             <U5ComponentDidUpdate />
