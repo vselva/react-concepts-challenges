@@ -18,6 +18,7 @@ function LifeCycleBase() {
     const [ counter3, setCounter3 ] = useState([0]);
     const [ counter4, setCounter4 ] = useState(0);
     const [ counter5, setCounter5 ] = useState(0);
+    const [ toggle1, setToggle1 ] = useState(true);
 
     return(
         <>
@@ -82,7 +83,14 @@ function LifeCycleBase() {
                 <hr />
 
             <h2>3. Unmounting Phase:</h2>
-            <ComponentWillUnMount /> <hr />
+            { toggle1 && <ComponentWillUnMount /> } <hr />
+                <button 
+                    type="submit" 
+                    className="btn btn-primary btn-sm"
+                    onClick={() => setToggle1(p => p === true ? false : true ) }>
+                        Toggle Displaying ComponentWillUnMount Component
+                </button>
+                <hr />
 
             <h2>4. Error Handling Phase:</h2>
             <EH1GetDerivedStateFromErrors /> <hr />
