@@ -18,7 +18,7 @@ class M4ComponentDidMount extends Component {
         const { users, loading } = this.state;
 
         if(loading) 
-            return <div>Loading...</div>
+            return <img src="/loader.gif" alt="Loading..." />
 
         return (
             <div className="card p-4 m-3">
