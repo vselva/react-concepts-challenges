@@ -8,9 +8,9 @@ import U3Render from "./U3-render";
 import U4GetSnapShotBeforeUpdate from "./U4-getSnapShotBeforeUpdate";
 import U5ComponentDidUpdate from "./U5-componentDidUpdate";
 import ComponentWillUnMount from "./UM-componentWillUnMount";
-import EH1GetDerivedStateFromErrors from "./EH1-getDerivedStatefromErrors";
-import EH2ComponentDidCatch from "./EH2-componentDidCatch";
 import { useState } from "react";
+import ErrorBoundary from "./ErrorBoundary";
+import ErrorProneComponent from "./ErrorProneComponent";
 
 function LifeCycleBase() {
     const [ counter1, setCounter1 ] = useState(0);
@@ -93,8 +93,9 @@ function LifeCycleBase() {
                 <hr />
 
             <h2>4. Error Handling Phase:</h2>
-            <EH1GetDerivedStateFromErrors /> <hr />
-            <EH2ComponentDidCatch /> <hr />
+            <ErrorBoundary>
+                <ErrorProneComponent />
+            </ErrorBoundary>
 
         </>
     );
