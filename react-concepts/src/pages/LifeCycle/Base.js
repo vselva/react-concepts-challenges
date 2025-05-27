@@ -10,8 +10,11 @@ import U5ComponentDidUpdate from "./U5-componentDidUpdate";
 import ComponentWillUnMount from "./UM-componentWillUnMount";
 import EH1GetDerivedStateFromErrors from "./EH1-getDerivedStatefromErrors";
 import EH2ComponentDidCatch from "./EH2-componentDidCatch";
+import { useState } from "react";
 
 function LifeCycleBase() {
+    const [ counter, setCounter ] = useState(0);
+
     return(
         <>
             <h1>Component Life Cycles</h1>
@@ -19,7 +22,16 @@ function LifeCycleBase() {
 
             <h2>1. Mounting Phase:</h2>
             <M1Constructor counter={ 123 } /> <hr />
-            <M2GetDerivedStateFromProps /> <hr />
+            
+            <M2GetDerivedStateFromProps counter={ counter } /> <hr />
+                <button 
+                    type="submit" 
+                    className="btn btn-primary btn-sm"
+                    onClick={() => setCounter(c => c + 1) }>
+                        Update counter prop (current: {counter}) for M2GetDerivedStateFromProps
+                </button>
+                <hr />
+
             <M3Render /> <hr />
             <M4ComponentDidMount />
 
