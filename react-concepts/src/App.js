@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
@@ -13,6 +14,9 @@ import HooksBase from './pages/Hooks/Base';
 import CoreFunctionsBase from './pages/CoreFunctions/Base';
 import NotFound from './pages/NotFound';
 import LifeCycleBase from './pages/LifeCycle/Base';
+
+import LazyLoading from './pages/LazyLoading/Base';
+
 
 function App() {
     return (
@@ -52,6 +56,9 @@ function App() {
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/LifeCycle">Component Life Cycles</Link>
                                             </li>
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/LazyLoading">Lazy Loading</Link>
+                                            </li>
                                         </ul>
                                     </nav>
 
@@ -66,6 +73,7 @@ function App() {
                                         <Route path="/Hooks" element={ <HooksBase /> } />
                                         <Route path="/CoreFunctions" element={ <CoreFunctionsBase /> } />
                                         <Route path="/LifeCycle" element={ <LifeCycleBase /> } />
+                                        <Route path="/LazyLoading" element={ <LazyLoading /> } />
                                         <Route path="*" element={<NotFound /> } />
                                     </Routes>
                                 </Router>
