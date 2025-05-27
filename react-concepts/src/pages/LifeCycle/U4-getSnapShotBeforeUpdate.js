@@ -11,17 +11,23 @@ class U4GetSnapShotBeforeUpdate extends Component {
     );
 
     getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('');
+        console.log('###################################');
         console.log('prevState:', prevState);
         console.log('prevProps:', prevProps);
         console.log("Snapshot before update:", prevState.counter);
+        console.log('###################################');
         return prevState.counter;
     }
 
     componentDidUpdate(prevProps, prevState, snapShot) {
+        console.log('');
+        console.log('###################################');
         console.log('prevState:', prevState);
         console.log('prevProps:', prevProps);
         console.log('snapshot:', snapShot);
         console.log("Updated from", snapShot, "to", this.state.counter);
+        console.log('###################################');
     }
 
     render() {

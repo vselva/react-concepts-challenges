@@ -5,6 +5,7 @@ class U2ShouldComponentUpdate extends Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         // render only state changes
+        console.log('');
         console.log('+++++++++++++++++++++++++');
         console.log('In shouldComponentUpdate()');
         console.log('nextProps:', nextProps);

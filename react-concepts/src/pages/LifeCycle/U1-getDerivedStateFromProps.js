@@ -6,6 +6,7 @@ class U1GetDerivedStateFromProps extends Component {
     state = { counter: this.props.counter }
 
     static getDerivedStateFromProps(nextProps, prevState) {
+        console.log('');
         console.log('============================')
         console.log('In getDerivedStatefromProps():')
         console.log('nextProps.counter:', nextProps.counter);
