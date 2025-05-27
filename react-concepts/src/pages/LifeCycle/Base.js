@@ -70,6 +70,7 @@ function LifeCycleBase() {
                 <hr />
 
             <U4GetSnapShotBeforeUpdate /> <hr />
+            
             <U5ComponentDidUpdate />
 
             <h2>3. Unmounting Phase:</h2>
