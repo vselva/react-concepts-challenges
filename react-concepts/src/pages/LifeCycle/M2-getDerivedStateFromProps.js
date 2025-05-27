@@ -1,9 +1,8 @@
 import { Component } from "react"
 
-class M2GetDerivedStateFromProps extends Component {
-
+class M2GetDerivedStateFromProps extends Component
+{
     static defaultState = { counter: 0 }
-
     state = { counter: this.props.counter }
 
     static getDerivedStateFromProps(nextProps, prevState) {
