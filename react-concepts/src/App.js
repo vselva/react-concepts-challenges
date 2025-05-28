@@ -16,6 +16,7 @@ import NotFound from './pages/NotFound';
 import LifeCycleBase from './pages/LifeCycle/Base';
 
 import LazyLoading from './pages/LazyLoading/Base';
+import FetchAxios from './pages/Fetch-Axios/Base';
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
                                             </li>
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/PropsBase">Props</Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link className="nav-link" to="/FetchAxios">Fetch & Axios</Link>
                                             </li>
                                             <li className="nav-item">
                                                 <Link className="nav-link" to="/Map">Map</Link>
@@ -66,6 +70,7 @@ function App() {
                                         <Route path="/" element={<Home />} />
                                         <Route path="/Jsx" element={<Jsx />} />
                                         <Route path="/PropsBase" element={ <PropsBase /> } />
+                                        <Route path="/FetchAxios" element={ <FetchAxios /> } />
                                         <Route path="/Map" element={ <Map /> } />
                                         <Route path="/Components" element={ <Components /> } />
                                         <Route path="/UseEffect" element={ <UseEffect /> } />
