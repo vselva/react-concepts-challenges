@@ -11,17 +11,18 @@ function UseContextBase() {
         <>
             <h4>useContext:</h4>
             <hr />
+
             <ParentComponent> 
                 <ChildComponent />
             </ParentComponent>
             <hr/>
+
             <OnePageContextExample /> 
             <hr />
 
             <simpleContext.Provider value={{ name: 'Selva' }}>
                 <UseContext />
             </simpleContext.Provider>
-            
         </>
     );
 }
