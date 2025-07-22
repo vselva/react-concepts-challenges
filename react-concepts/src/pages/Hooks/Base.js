@@ -1,14 +1,13 @@
-import UseEffectBase from "./3-UseEffect/Base";
-import UseReducerBase from "./2-useReducer/Base";
 import UseStateBase from "./1-useState/Base";
+import UseReducerBase from "./2-useReducer/Base";
+import UseEffectBase from "./3-UseEffect/Base";
+import UseLayoutEffectBase from "./4-useLayoutEffect.js/Base";
 import UseCallBackBase from "./5-useCallBack/Base";
 import UseMemoBase from "./6-useMemo.js/Base";
 import UseRefBase from "./7-useRef.js/Base";
-import UseLayoutEffectBase from "./4-useLayoutEffect.js/Base";
-import CustomHook from "./CustomHook/Base";
+import CustomHook from "./8-CustomHook/Base";
 
 function HooksBase() {
-
     return (
         <>
             <h1> React Hooks:</h1>
@@ -22,7 +21,7 @@ function HooksBase() {
 
             <UseEffectBase />
             <hr />
-            
+
             <UseCallBackBase />
             <hr />
 
