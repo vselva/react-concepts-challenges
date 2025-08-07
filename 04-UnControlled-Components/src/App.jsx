@@ -1,17 +1,20 @@
 import './App.css'
-import { createRef } from 'react'
+import { createRef, useState } from 'react'
 
 function App() {
-  const inputRef = createRef("");
+  const nameRef = createRef("");
+  const [name, setName] = useState('');
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(inputRef.current.value);
+    console.log(nameRef.current.value);
+    setName(nameRef.current.value);
   }
 
   return (
     <>
       <h1>Un Controlled Components</h1>
+      <h4> Entered Text: {name} </h4>
       <div className="card">
         <form onSubmit={(e) => submitHandler(e)}>
 
@@ -19,14 +22,14 @@ function App() {
             placeholder='Enter Name'
             id="name"
             className="form"
-            ref={inputRef}
+            ref={nameRef}
           />
 
           <button type='submit'
             id="submit"
             className='btn'>
             Submit
-            </button>
+          </button>
         </form>
       </div>
 
