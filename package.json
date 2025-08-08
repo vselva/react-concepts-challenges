@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/vselva/react-concepts-challenges/issues"
   },
-  "homepage": "https://github.com/vselva/react-concepts-challenges#readme"
+  "homepage": "https://github.com/vselva/react-concepts-challenges#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.3.0"
+  }
 }
